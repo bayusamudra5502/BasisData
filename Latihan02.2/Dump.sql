@@ -29,7 +29,7 @@ CREATE TABLE `account` (
   PRIMARY KEY (`account-number`),
   KEY `fk_branchNameAcc` (`branch-name`),
   CONSTRAINT `fk_branchNameAcc` FOREIGN KEY (`branch-name`) REFERENCES `branch` (`branch-name`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `account` (
 
 LOCK TABLES `account` WRITE;
 /*!40000 ALTER TABLE `account` DISABLE KEYS */;
-INSERT INTO `account` VALUES (10,'Pasir Kaliki',250),(11,'Leuwigajah',100),(12,'chelyabinsk',900),(13,'NY',1000),(14,'NY',600),(15,'NY',100),(16,'Leuwigajah',600),(17,'Pasir Kaliki',1000),(18,'Pasir Kaliki',5000),(19,'NY',18000),(20,'NY',20000),(21,'chelyabinsk',20000),(22,'Greater Jakarta',10000);
+INSERT INTO `account` VALUES (10,'Pasir Kaliki',250),(11,'Leuwigajah',100),(12,'chelyabinsk',900),(13,'NY',1000),(14,'NY',600),(15,'NY',100),(16,'Leuwigajah',600),(17,'Pasir Kaliki',1000),(18,'Pasir Kaliki',5000),(19,'NY',18000),(20,'NY',20000),(21,'chelyabinsk',20000),(22,'Greater Jakarta',10000),(23,'Greater Jakarta',18000);
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -65,7 +65,7 @@ CREATE TABLE `borrower` (
 
 LOCK TABLES `borrower` WRITE;
 /*!40000 ALTER TABLE `borrower` DISABLE KEYS */;
-INSERT INTO `borrower` VALUES ('Ajat Sudrajat',13),('Bob',6),('Alice',5),('John',4),('Udin Saepudin',12);
+INSERT INTO `borrower` VALUES ('Ajat Sudrajat',13),('Bob',6),('Alice',5),('John',4),('Udin Saepudin',12),('Udin Saepudin',22);
 /*!40000 ALTER TABLE `borrower` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ CREATE TABLE `branch` (
 
 LOCK TABLES `branch` WRITE;
 /*!40000 ALTER TABLE `branch` DISABLE KEYS */;
-INSERT INTO `branch` VALUES ('Amandes','Brooklyn',5000000),('Anzio','Brooklyn',2500000),('chelyabinsk','chelyabinsk',1500000),('Ciacia','Brooklyn',4000000),('Dea','Brooklyn',10000000),('Dustira','Cimahi',10000000),('Greater Jakarta','Jakarta',9000000),('ITB','Bandung',10000000),('Lembang','Bandung',500000),('Leuwigajah','Cimahi',2500000),('Monaro','Brooklyn',3000000),('NY','New York',10000000),('Pasir Kaliki','Bandung',250000),('Pesantren','Cimahi',300000),('South NY','New York',9000000);
+INSERT INTO `branch` VALUES ('Amandes','Brooklyn',5000000),('Anzio','Brooklyn',2500000),('chelyabinsk','chelyabinsk',1500000),('Ciacia','Brooklyn',4000000),('Dea','Brooklyn',10000000),('Dustira','Cimahi',10000000),('Greater Jakarta','Jakarta',9000000),('ITB','Bandung',1000),('Lembang','Bandung',500000),('Leuwigajah','Cimahi',2500000),('Monaro','Brooklyn',3000000),('NY','New York',10000000),('Pasir Kaliki','Bandung',250000),('Pesantren','Cimahi',1000),('South NY','New York',9000000);
 /*!40000 ALTER TABLE `branch` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,7 +142,7 @@ CREATE TABLE `depositor` (
 
 LOCK TABLES `depositor` WRITE;
 /*!40000 ALTER TABLE `depositor` DISABLE KEYS */;
-INSERT INTO `depositor` VALUES ('Ajat Sudrajat',22),('Bob',19),('Bayu Samudra',18),('Bayu Samudra',16),('Udin Saepudin',11);
+INSERT INTO `depositor` VALUES ('Ajat Sudrajat',22),('Bob',19),('Bayu Samudra',18),('Bayu Samudra',16),('Udin Saepudin',11),('Bayu Samudra',23);
 /*!40000 ALTER TABLE `depositor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -182,4 +182,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-29 10:46:16
+-- Dump completed on 2022-01-29 11:48:09
